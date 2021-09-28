@@ -1,11 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 html,
 body {
   margin: 0;
   background-color: grey;
+  font-family: 'Lato', sans-serif;
 }
-/* main {
-  height: 300vh;
-} */
 section {
   display: flex;
   justify-content: center;
@@ -25,11 +24,49 @@ section {
 }
 .inner1 {
   grid-area: foo;
-  background-color: #00bfff;
+  background-color: #ffffff;
+}
+.inner1 img {
+  width: auto;
+  height: 100%;
 }
 .inner2 {
   grid-area: bar;
-  background-color: #b0c4de;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-gap: 5px;
+  grid-template-areas:
+    'slogan'
+    'menu'
+    'menu-items';
+}
+.slogan {
+  grid-area: slogan;
+  text-align: center;
+  font-weight: 600;
+  font-size: large;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #20a9df;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.menu {
+  grid-area: menu;
+  text-align: center;
+}
+.menu-items {
+  grid-area: menu-items;
+  display: flex;
+  justify-content: space-around;
+}
+.menu-items a {
+  font-weight: 600;
+  font-size: large;
+  text-transform: uppercase;
+  color: #20a9df;
 }
 .inner3 {
   grid-area: content;
@@ -62,6 +99,32 @@ section {
       'content content'
       'goodies yummy';
   }
+  .inner2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-gap: 5px;
+    grid-template-areas:
+      'slogan'
+      'menu'
+      'menu-items';
+  }
+  .slogan {
+    text-align: center;
+    font-weight: 600;
+    font-size: small;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #20a9df;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .menu-items a {
+    font-weight: 600;
+    font-size: small;
+    text-transform: uppercase;
+    color: #20a9df;
+  }
 }
 /* Mobile View */
 @media only screen and (max-width: 500px) {
@@ -70,7 +133,7 @@ section {
     height: 300vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 1fr 1fr 1fr 1fr 200px;
+    grid-template-rows: 200px 200px 1fr 1fr 1fr 200px;
     grid-template-areas:
       'foo'
       'bar'
