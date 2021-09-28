@@ -1,0 +1,82 @@
+html,
+body {
+  margin: 0;
+  background-color: grey;
+}
+/* main {
+  height: 300vh;
+} */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first-section {
+  background-color: #fbae3c;
+  height: 200vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 1fr 300px;
+  grid-gap: 5px;
+  grid-template-areas:
+    'foo bar bar'
+    'content content yum'
+    'goodies yummy yummy';
+}
+.inner1 {
+  grid-area: foo;
+  background-color: #00bfff;
+}
+.inner2 {
+  grid-area: bar;
+  background-color: #b0c4de;
+}
+.inner3 {
+  grid-area: content;
+  background-color: #1e90ff;
+}
+.inner4 {
+  grid-area: yum;
+  background-color: #6495ed;
+}
+.inner5 {
+  grid-area: goodies;
+  background-color: #4682b4;
+}
+.inner6 {
+  grid-area: yummy;
+  background-color: #5f9ea0;
+}
+/* Tablet View */
+@media only screen and (max-width: 800px) {
+  .first-section {
+    background-color: #fbae3c;
+    height: 200vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 200px 1fr 250px;
+    grid-gap: 5px;
+    grid-template-areas:
+      'foo foo'
+      'bar yum'
+      'content content'
+      'goodies yummy';
+  }
+}
+/* Mobile View */
+@media only screen and (max-width: 500px) {
+  .first-section {
+    background-color: #fbae3c;
+    height: 300vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr 1fr 1fr 1fr 200px;
+    grid-template-areas:
+      'foo'
+      'bar'
+      'yum'
+      'content'
+      'goodies'
+      'yummy';
+  }
+}
