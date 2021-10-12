@@ -10,7 +10,7 @@ section {
   justify-content: center;
   align-items: center;
 }
-.first-section {
+.main-section {
   background-color: #fbae3c;
   height: 200vh;
   display: grid;
@@ -86,7 +86,7 @@ section {
 }
 /* Tablet View */
 @media only screen and (max-width: 800px) {
-  .first-section {
+  .main-section {
     background-color: #fbae3c;
     height: 200vh;
     display: grid;
@@ -128,7 +128,7 @@ section {
 }
 /* Mobile View */
 @media only screen and (max-width: 500px) {
-  .first-section {
+  .main-section {
     background-color: #fbae3c;
     height: 300vh;
     display: grid;
