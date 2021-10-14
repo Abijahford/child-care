@@ -90,11 +90,34 @@ section {
 }
 .inner5 {
   grid-area: goodies;
-  background-color: #4682b4;
+  background-color: #ffffff;
+}
+.inner5 img {
+  width: auto;
+  height: 100%;
 }
 .inner6 {
   grid-area: yummy;
-  background-color: #5f9ea0;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.inner6 p {
+  font-weight: 400;
+  font-size: medium;
+  text-transform: uppercase;
+  color: #20a9df;
+  margin-bottom: -20px;
+}
+.inner6 a {
+  font-weight: 600;
+  font-size: large;
+  text-transform: uppercase;
+  color: #20a9df;
+}
+.center {
+  align-items: center;
 }
 /* Tablet View */
 @media only screen and (max-width: 800px) {
@@ -157,6 +180,21 @@ section {
     padding-top: 5px;
     padding-bottom: 5px;
   }
+  .inner6 p {
+    font-weight: 400;
+    font-size: small;
+    text-transform: uppercase;
+    color: #20a9df;
+    margin-bottom: -20px;
+    text-align: center;
+  }
+  .inner6 a {
+    font-weight: 600;
+    font-size: small;
+    text-transform: uppercase;
+    color: #20a9df;
+    text-align: center;
+  }
 }
 /* Mobile View */
 @media only screen and (max-width: 500px) {
@@ -165,7 +203,7 @@ section {
     height: 300vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px 200px 300px 1fr 1fr 200px;
+    grid-template-rows: 200px 200px 300px 1fr 200px 300px;
     grid-template-areas:
       'foo'
       'bar'
@@ -189,5 +227,9 @@ section {
     color: #ffffff;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .inner5 img {
+    width: auto;
+    height: 100%;
   }
 }
