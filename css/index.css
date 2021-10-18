@@ -198,9 +198,6 @@ section {
 }
 /* Mobile View */
 @media only screen and (max-width: 500px) {
-  main {
-    /* width: 100vw; */
-  }
   .main-section {
     background-color: #fbae3c;
     height: 300vh;
