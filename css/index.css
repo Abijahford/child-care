@@ -204,6 +204,7 @@ section {
   .main-section {
     background-color: #fbae3c;
     height: 300vh;
+    width: 100%;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 200px 200px 300px 1fr 200px 300px;
