@@ -70,7 +70,7 @@ section {
 }
 .inner3 {
   grid-area: content;
-  background-color: #1e90ff;
+  background-color: #ffffff;
 }
 .inner4 {
   grid-area: yum;
@@ -85,8 +85,7 @@ section {
   font-size: large;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 .inner5 {
   grid-area: goodies;
@@ -115,6 +114,37 @@ section {
   font-size: large;
   text-transform: uppercase;
   color: #20a9df;
+}
+.inner3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.hiring-section {
+  height: 300px;
+  width: 1fr;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom: 5px solid #fbae3c;
+}
+.hiring-section p {
+  text-align: center;
+  font-weight: 600;
+  font-size: large;
+  text-transform: uppercase;
+  color: #fbae3c;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.hiring-section a {
+  color: #fbae3c;
+}
+.photo-section {
+  height: 70%;
 }
 .center {
   align-items: center;
@@ -177,8 +207,7 @@ section {
     font-size: small;
     text-transform: uppercase;
     color: #ffffff;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 10px;
   }
   .inner6 p {
     font-weight: 400;
@@ -194,6 +223,37 @@ section {
     text-transform: uppercase;
     color: #20a9df;
     text-align: center;
+  }
+  .inner3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .hiring-section {
+    height: 300px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: 5px solid #fbae3c;
+  }
+  .hiring-section p {
+    text-align: center;
+    font-weight: 600;
+    font-size: large;
+    text-transform: uppercase;
+    color: #fbae3c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .hiring-section a {
+    color: #fbae3c;
+  }
+  .photo-section {
+    height: 70%;
   }
 }
 /* Mobile View */
@@ -262,6 +322,8 @@ section {
     color: #fbae3c;
   }
   .photo-section {
-    height: 70%;
+    background-color: #20a9df;
+    height: 100%;
+    width: 100%;
   }
 }
