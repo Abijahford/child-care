@@ -4,7 +4,6 @@ body {
   margin: 0;
   background-color: grey;
   font-family: 'Lato', sans-serif;
-  width: 100vw;
 }
 section {
   display: flex;
@@ -199,11 +198,14 @@ section {
 }
 /* Mobile View */
 @media only screen and (max-width: 500px) {
+  main {
+    /* width: 100vw; */
+  }
   .main-section {
     background-color: #fbae3c;
     height: 300vh;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: 200px 200px 300px 1fr 200px 300px;
     grid-template-areas:
       'foo'
