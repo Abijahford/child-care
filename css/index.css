@@ -204,7 +204,7 @@ section {
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 200px 200px 300px 1fr 200px 300px;
+    grid-template-rows: 200px 200px 300px auto 200px 300px;
     grid-template-areas:
       'foo'
       'bar'
@@ -236,9 +236,30 @@ section {
   .inner3 {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
   }
   .hiring-section {
-    height: 30%;
+    height: 300px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-bottom: 5px solid #fbae3c;
+  }
+  .hiring-section p {
+    text-align: center;
+    font-weight: 600;
+    font-size: large;
+    text-transform: uppercase;
+    color: #fbae3c;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .hiring-section a {
+    color: #fbae3c;
   }
   .photo-section {
     height: 70%;
