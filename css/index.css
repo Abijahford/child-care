@@ -5,6 +5,9 @@ body {
   background-color: grey;
   font-family: 'Lato', sans-serif;
 }
+.main-container {
+  width: 100vw;
+}
 section {
   display: flex;
   justify-content: center;
@@ -13,7 +16,6 @@ section {
 .main-section {
   background-color: #fbae3c;
   height: 200vh;
-  width: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 300px auto 300px;
