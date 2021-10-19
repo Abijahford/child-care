@@ -122,9 +122,9 @@ section {
 }
 .hiring-section {
   height: 300px;
-  width: 1fr;
+  width: 100%;
   padding-left: 10px;
-  padding-right: 10px;
+  margin-right: 10px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -250,7 +250,7 @@ section {
     height: 300px;
     width: 100%;
     padding-left: 10px;
-    padding-right: 10px;
+    margin-right: 20px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -316,12 +316,13 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    width: 100%;
   }
   .hiring-section {
     height: 300px;
     width: 100%;
     padding-left: 10px;
-    padding-right: 10px;
+    margin-right: 20px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
